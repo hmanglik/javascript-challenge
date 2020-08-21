@@ -41,9 +41,9 @@ function runEnter() {
     // Select the input elements and get the raw HTML node
     var dateTime = d3.select("#datetime");
     var city = d3.select("#city");
-    var state = d3.select("state");
-    var country = d3.select("country");
-    var shape = d3.select("shape");
+    var state = d3.select("#state");
+    var country = d3.select("#country");
+    var shape = d3.select("#shape");
 
     // Get the value property of the input elements
     var inputDate = dateTime.property("value");
@@ -51,6 +51,9 @@ function runEnter() {
     var inputState = state.property("value");
     var inputCountry = country.property("value");
     var inputShape = shape.property("value");
+
+    console.log(inputDate);
+    console.log(inputCity);
 
     // Filter the data for the input values
     if (inputDate != "") {
