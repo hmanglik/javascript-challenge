@@ -52,9 +52,6 @@ function runEnter() {
     var inputCountry = country.property("value");
     var inputShape = shape.property("value");
 
-    console.log(inputDate);
-    console.log(inputCity);
-
     // Filter the data for the input values
     if (inputDate != "") {
         var filteredData = tableData.filter(ufo => ufo.datetime === inputDate);}
@@ -70,7 +67,7 @@ function runEnter() {
     // Clear the tbody
     d3.select("tbody").html("");
 
-    // Loop Through `filteredData` and console.log each ufo object
+    // Loop through `filteredData` and console.log each ufo object
     filteredData.forEach(function(ufo_sighting) {
         console.log(ufo_sighting);
 
